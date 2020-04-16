@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="AnchorPane" maxHeight="600.0" maxWidth="905.0" minHeight="600.0" minWidth="905.0" prefHeight="600.0" prefWidth="905.0" styleClass="br.com.samuel.difuso.files.css.principal.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.samuka.sistemadifuso.controller.RegraController">
+    <left>
+      <VBox prefWidth="146.0" spacing="10.0" style="-fx-border-color: #DDD  #DDD  #FFF #FFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btSalvar" mnemonicParsing="false" onAction="#onActionBtSalvar" prefHeight="25.0" prefWidth="161.0" text="Salvar" />
+            <Button fx:id="btIncluirRegra" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onActionBtIncluirRegra" prefHeight="25.0" prefWidth="147.0" text="Incluir Regra">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btAlterarRegra" disable="true" mnemonicParsing="false" onAction="#onActionBtAlterarRegra" prefHeight="25.0" prefWidth="138.0" text="Alterar Regra" />
+            <Button fx:id="btExcluirRegra" disable="true" mnemonicParsing="false" onAction="#onActionBtExcluirRegra" prefHeight="25.0" prefWidth="129.0" text="Excluir Regra" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Button>
+            <Button fx:id="btFechar" mnemonicParsing="false" onAction="#onActionBtFechar" prefHeight="25.0" prefWidth="134.0" text="Fechar">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+    </left>
+   <center>
+      <Pane prefHeight="385.0" prefWidth="654.0" style="-fx-background-color: #FFF;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox>
+               <children>
+                  <HBox spacing="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome da Regra">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="tfNomeRegra" prefHeight="25.0" prefWidth="433.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ordem">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="tfOrdemRegra" prefHeight="25.0" prefWidth="102.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ListView fx:id="lvRegras" prefHeight="336.0" prefWidth="741.0" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

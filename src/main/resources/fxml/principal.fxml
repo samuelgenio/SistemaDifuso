@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.samuka.sistemadifuso.controller.PrincipalController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arquivo">
+            <items>
+                <MenuItem fx:id="arquivoNovo" mnemonicParsing="false" onAction="#onActionMenuItem" text="Novo" />
+                <MenuItem fx:id="arquivoAbrir" mnemonicParsing="false" onAction="#onActionMenuItem" text="Abrir" />
+                <MenuItem fx:id="arquivoSalvar" mnemonicParsing="false" onAction="#onActionMenuItem" text="Salvar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox fx:id="paneInfo" prefHeight="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="407.0">
+               <children>
+                  <Text fx:id="txInfo" layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pronto" />
+               </children>
+            </Pane>
+            <Pane nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <BorderPane fx:id="desktopPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

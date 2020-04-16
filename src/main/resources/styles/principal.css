@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+#paneInfo {
+    -fx-background-color: #FFF;
+}
+
+#pnOpitions {
+    -fx-border-color: #000000;
+    -fx-background-color: #eee;
+}
+
+#pnCadastroVariaveis {
+    /*-fx-border-color: #000000;*/
+    -fx-background-color: #000;
+}
