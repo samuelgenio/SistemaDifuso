@@ -4,7 +4,7 @@ Implementação de um aplicativo para calculo de lógica difusa
 
 Permite:
 
-* Definir Váriaveis;
+* Definir Variáveis;
 * Definir objetivos;
 * Definir regras;
 * Possui modificadores pré definidos;
@@ -22,19 +22,19 @@ As Regras são definidas da seguinte maneira:
 
 `SE [antecedente] ENTAO [consequente]`
 
-**Antecedente:** possui condições que, quando satisfeitas (mesmo que parcialmente), determinam o processamento do conseqüente através de um mecanismo de inferência difusa.
+**Antecedente:** possui condições que, quando satisfeitas (mesmo que parcialmente), determinam o processamento do consequente através de um mecanismo de inferência difusa.
 
-**Conseqüente:** composto por ações ou diagnósticos que são gerados com o disparo da regra. O consulto de todoas os consequentes das regras criadas são agrupados para o calculo de resolução do aplicativo.
+**Consequente:** composto por ações ou diagnósticos que são gerados com o disparo da regra. O consulto de todas os consequentes das regras criadas são agrupados para o calculo de resolução do aplicativo.
 
 # Modificadores
 
-Os modificados são utilizar para modificar o valor da váriavel. Possuindo a função de advérbio. 'Ex: Aceleração é **muito** lenta'
+Os modificados são utilizar para modificar o valor da variável. Possuindo a função de advérbio. 'Ex: Aceleração é **muito** lenta'
 
 * **Muito:** Operador de contração, que reduz o valor de pertinência de elementos com baixo valor.
 
 Ex: `f(x) = x²`
 
-* **Mais ou menos:** Operador de ditalação, que beneficia valores de pertinência mais baixos do que os altos.
+* **Mais ou menos:** Operador de dilatação, que beneficia valores de pertinência mais baixos do que os altos.
 
 Ex: `f(x) = 2^(0,5)`
 
@@ -50,7 +50,7 @@ Ex: `f(x) = x^(p)`
 
 # Exemplo incluso.
 
-Ao carregar o arquivo '/save/save.xml' será possivel interegir com o seguinte exemplo:
+Ao carregar o arquivo '/save/save.xml' será possível interagir com o seguinte exemplo:
 
 **Variáveis:**
 
